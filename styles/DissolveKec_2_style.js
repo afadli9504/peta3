@@ -221,16 +221,16 @@ var style_DissolveKec_2 = function(feature, resolution){
     
     var labelText = ""; 
     var value = feature.get("nmkec");
-    var labelFont = "13.0px \'Open Sans\', sans-serif";
-    var labelFill = "#323232";
-    var bufferColor = "";
-    var bufferWidth = 0;
+    var labelFont = "13.0px \'Cambria\', sans-serif";
+    var labelFill = "#0091ca";
+    var bufferColor = "#ffffff";
+    var bufferWidth = 3.0;
     var textAlign = "left";
     var offsetX = 0;
     var offsetY = 0;
     var placement = 'point';
-    if (feature.get("kdprov") !== null) {
-        labelText = String(feature.get("kdprov"));
+    if (feature.get("nmkec") !== null) {
+        labelText = String(feature.get("nmkec"));
     }
     
     var style = categories_DissolveKec_2(feature, value, size, resolution, labelText,

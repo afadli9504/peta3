@@ -3,6 +3,7 @@ var wms_layers = [];
 
         var lyr_ESRISatellite_0 = new ol.layer.Tile({
             'title': 'ESRI Satellite',
+            'type':'base',
             'opacity': 1.000000,
             
             
@@ -14,6 +15,7 @@ var wms_layers = [];
 
         var lyr_GoogleSatellite_1 = new ol.layer.Tile({
             'title': 'Google Satellite',
+            'type':'base',
             'opacity': 1.000000,
             
             
@@ -34,7 +36,7 @@ var lyr_DissolveKec_2 = new ol.layer.Vector({
                 source:jsonSource_DissolveKec_2, 
                 style: style_DissolveKec_2,
                 popuplayertitle: 'Dissolve Kec',
-                interactive: true,
+                interactive: false,
     title: 'Dissolve Kec<br />\
     <img src="styles/legend/DissolveKec_2_0.png" /> AGATS<br />\
     <img src="styles/legend/DissolveKec_2_1.png" /> AKAT<br />\
